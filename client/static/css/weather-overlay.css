@@ -1,0 +1,68 @@
+@font-face{
+ font-family: 'customFont';
+ font-style: normal;
+ font-weight: 10;
+ src: url(../fonts/digital-7.ttf);
+ unicode-range: U+0000-00FF, U+2013-2030; 
+}
+
+.kelin {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+
+#video-background {
+  position: relative;
+  max-height: 1080px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: black;
+}
+
+#overlay {
+  outline: dashed green thick;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+.weather-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute; 
+  display: inline-block;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.temperature {
+  font-size: 7em;
+  margin: 0em .5em;
+  display: inline-block;
+}
+
+.weather-icon {
+  display: block;
+  font-size: 20em;
+}
+
+.clock-overlay {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  padding-right: 5%;
+  padding-bottom: 5%
+}
+
+#digital_clock {
+  font-family: 'customFont', Helvetica;
+  font-size: 5em;
+}

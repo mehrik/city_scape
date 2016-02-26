@@ -1,0 +1,67 @@
+<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="http://cityscapes.io/"><i class="">
+            </i> Cityscapes.io</a>
+        </div>
+        
+       <div class="navbar-collapse collapse" id="bs-navbar">
+            
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="page-scroll" href="/las.html" id="wassup">{{ CVC.cityName }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#two"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#three"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#four"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#last"></a>
+                </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" data-toggle="modal" title="All Locations" href="#dropdown_nav_or_all_locations"> <i class="ion-ios-search">
+            </i>  Search</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  <div class="header-content">
+    <div class="inner">
+        <h1 class="cursive">Simple, One Page Design</h1>
+        <h4>A free landing page theme with video background</h4>
+        <hr>
+        <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+    </div>
+</div> -->
+<div id="video-background">
+    <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="">
+        <source ng-src="{{CVC.getVideo()}}" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+    <div class="overlay">
+        <div class="weather-overlay">
+            <span ng-class="CVC.weatherIcon"></span>
+            <h1 class='temperature'><span ng-bind="CVC.celsius"></span>&deg; C</h1>
+            <h1 class='temperature'><span ng-bind="CVC.fahrenheit"></span>&deg; F</h1>
+            <h1 ng-bind="CVC.description"></h1>
+        </div>
+        <div class="clock-overlay" >
+            <h1 id="digital_clock"></h1>
+            <canvas id="clock_id" class="CoolClock:city:125"></canvas>
+        </div>
+    </div>
+</div>
