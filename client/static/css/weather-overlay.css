@@ -33,6 +33,7 @@
 }
 
 .weather-overlay {
+  font-size: 1vw;
   bottom: 0;
   left: 0;
   position: absolute; 
